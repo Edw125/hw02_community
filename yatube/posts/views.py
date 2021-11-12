@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Post, Group
-from django.http import HttpResponse
 
 
 # Главная страница
@@ -42,7 +41,6 @@ def groups(request):
     }
     return render(request, template, context)
 
-
 # Страница выбранного поста
 # def single_post(request, group_name, number_post):
 #     template = 'posts/single_post.html'
@@ -53,5 +51,3 @@ def groups(request):
 #         'group': Post.group,
 #     }
 #     return render(request, template, context)
-
-
