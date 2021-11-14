@@ -1,10 +1,9 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block title %}
 <title>{{ title }}</title>
 {% endblock %}
 {% block content %}
 <main>
-  <!-- класс py-5 создает отступы сверху и снизу блока -->
   <div class="container py-5">
     <h1>{{ title }}</h1>
     <article>
@@ -24,7 +23,6 @@
       </p>
       <a href="{% url 'posts:group_post' %}">все записи группы</a>
     </article>
-    <!-- под последним постом нет линии -->
   </div>
 </main>
 {% endblock %}
